@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public  static final String DATABASE_NAME = "sathira.db";
+    public  static final String DATABASE_NAME = "190359P.db";
 
     public DBHelper(Context context){
         super(context,DATABASE_NAME,null,1);
