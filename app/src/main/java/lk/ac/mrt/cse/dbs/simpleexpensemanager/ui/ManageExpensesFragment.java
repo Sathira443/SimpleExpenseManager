@@ -30,6 +30,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
@@ -84,8 +85,8 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
     }
 
     @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
+    public void onClick(View v) {
+        switch (v.getId()) {
             case R.id.submit_amount:
                 String selectedAccount = (String) accountSelector.getSelectedItem();
                 String amountStr = amount.getText().toString();

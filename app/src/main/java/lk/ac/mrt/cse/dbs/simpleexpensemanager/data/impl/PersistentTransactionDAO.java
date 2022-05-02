@@ -37,7 +37,7 @@ public class PersistentTransactionDAO implements TransactionDAO {
             System.out.println("Current Balance Exceeded");
             return;
         }
-        DateFormat simpleFormat = new SimpleDateFormat("yyyy-mm-dd");
+        DateFormat simpleFormat = new SimpleDateFormat("yyyy-MM-dd");
         String simpleDate = simpleFormat.format(date);
         dbHelper.addTransactionLog(accountNo,expenseType.name(),amount,simpleDate);
     }
@@ -57,7 +57,7 @@ public class PersistentTransactionDAO implements TransactionDAO {
             Date date = null;
             String stringDate = cursor.getString(1);
             try {
-                date = new SimpleDateFormat("yyyy-mm-dd").parse(stringDate);
+                date = new SimpleDateFormat("yyyy-MM-dd").parse(stringDate);
             } catch (ParseException e) {
                 e.printStackTrace();
             }

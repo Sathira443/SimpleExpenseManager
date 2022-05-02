@@ -19,7 +19,8 @@ public class PersistentAccountDAO implements AccountDAO {
     private Context context;
 
     public PersistentAccountDAO(DBHelper dbHelper,Context context){
-        this.dbHelper = dbHelper; this.context = context;
+        this.dbHelper = dbHelper;
+        this.context = context;
     }
 
     @Override
@@ -27,6 +28,7 @@ public class PersistentAccountDAO implements AccountDAO {
         List<String> acc_noList = new ArrayList<>();
         Cursor cursor = dbHelper.getAllAccountNo();
 
+        //check whether there are no accounts
         if(!cursor.moveToFirst()){
             return acc_noList;
         }
@@ -43,8 +45,9 @@ public class PersistentAccountDAO implements AccountDAO {
     public List<Account> getAccountsList() {
         List<Account> accountList = new ArrayList<Account>();
         Cursor cursor = dbHelper.getAllAccounts();
-        Account account;
 
+
+        //check whether there are no accounts
         if(!cursor.moveToFirst()){
             return accountList;
         }
@@ -54,7 +57,8 @@ public class PersistentAccountDAO implements AccountDAO {
             String bank = cursor.getString(1);
             String owner = cursor.getString(2);
             double amount = cursor.getDouble(3);
-            account = new Account(acc_no,bank,owner,amount);
+
+            Account account = new Account(acc_no,bank,owner,amount);
             accountList.add(account);
         }
         while (cursor.moveToNext());
@@ -64,7 +68,6 @@ public class PersistentAccountDAO implements AccountDAO {
 
     @Override
     public Account getAccount(String accountNo) throws InvalidAccountException {
-        Account account;
         Cursor cursor = dbHelper.getAccountByNo(accountNo);
 
         if(cursor.moveToFirst()){
@@ -72,10 +75,11 @@ public class PersistentAccountDAO implements AccountDAO {
             String bank = cursor.getString(1);
             String owner = cursor.getString(2);
             double amount = cursor.getDouble(3);
-            account = new Account(acc_no,bank,owner,amount);
+
+            Account account = new Account(acc_no,bank,owner,amount);
             return account;
         }
-        String err = "Invalid account number";
+        String err = "Account " + accountNo + " is invalid.";
         throw new InvalidAccountException(err);
 
     }
@@ -95,7 +99,7 @@ public class PersistentAccountDAO implements AccountDAO {
     public void removeAccount(String accountNo) throws InvalidAccountException {
         Cursor cursor = dbHelper.getAccountByNo(accountNo);
         if(!cursor.moveToFirst()) {
-            String err = "Account Does not exist!";
+            String err = "Account " + accountNo + " is invalid.";
             throw new InvalidAccountException(err);
         }
 
@@ -106,7 +110,7 @@ public class PersistentAccountDAO implements AccountDAO {
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
         Cursor cursor = dbHelper.getAccountByNo(accountNo);
         if(!cursor.moveToFirst()) {
-            String err = "Account Does not exist!";
+            String err = "Account " + accountNo + " is invalid.";
             throw new InvalidAccountException(err);
         }
 

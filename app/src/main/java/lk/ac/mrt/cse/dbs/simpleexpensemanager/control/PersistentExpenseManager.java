@@ -8,10 +8,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.PersistentAccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.PersistentTransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 
-public class PersistantExpenseManager extends ExpenseManager {
+public class PersistentExpenseManager extends ExpenseManager {
     private Context context;
 
-    public PersistantExpenseManager(Context context) {
+    public PersistentExpenseManager(Context context) {
         this.context = context;
         setup();
     }
