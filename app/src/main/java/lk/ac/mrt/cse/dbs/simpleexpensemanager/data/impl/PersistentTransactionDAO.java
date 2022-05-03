@@ -86,10 +86,14 @@ public class PersistentTransactionDAO implements TransactionDAO {
     public List<Transaction> getPaginatedTransactionLogs(int limit) {
         List<Transaction> transactionList = getAllTransactionLogs();
 
+        int size = transactionList.size();
+
         //check the limit exceed the list size
-        if(limit>=transactionList.size()){
+        if(limit >= size){
             return transactionList;
         }
-        return transactionList.subList((limit-transactionList.size()),transactionList.size());
+
+        //Show last 10 transactions
+        return transactionList.subList(size-limit,size);
     }
 }
