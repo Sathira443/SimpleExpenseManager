@@ -19,7 +19,7 @@ public class PersistentExpenseManager extends ExpenseManager {
     @Override
     public void setup() {
 
-        DBHelper dbHelper = new DBHelper(context);
+        DBHelper dbHelper = new DBHelper(context); //database for persistent usage
 
         TransactionDAO persistentTransactionDAB = new PersistentTransactionDAO(dbHelper);
         setTransactionsDAO(persistentTransactionDAB);

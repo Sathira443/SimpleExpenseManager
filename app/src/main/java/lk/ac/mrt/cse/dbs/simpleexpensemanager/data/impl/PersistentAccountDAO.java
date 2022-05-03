@@ -13,6 +13,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountExcep
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
+/**
+ * This is an persistent implementation of the AccountDAO interface. All the
+ * Account details is stored in a SQLite database.
+ */
 public class PersistentAccountDAO implements AccountDAO {
 
     private DBHelper dbHelper;
@@ -33,6 +37,7 @@ public class PersistentAccountDAO implements AccountDAO {
             return acc_noList;
         }
 
+        // Add all the account numbers from the database to the acc_no list
         do {
             acc_noList.add(cursor.getString(0));
         }
@@ -46,19 +51,19 @@ public class PersistentAccountDAO implements AccountDAO {
         List<Account> accountList = new ArrayList<Account>();
         Cursor cursor = dbHelper.getAllAccounts();
 
-
         //check whether there are no accounts
         if(!cursor.moveToFirst()){
             return accountList;
         }
 
+        // Add all the account details from the database to the accountsList
         do {
             String acc_no = cursor.getString(0);
             String bank = cursor.getString(1);
             String owner = cursor.getString(2);
             double amount = cursor.getDouble(3);
 
-            Account account = new Account(acc_no,bank,owner,amount);
+            Account account = new Account(acc_no, bank, owner, amount);
             accountList.add(account);
         }
         while (cursor.moveToNext());
@@ -70,6 +75,7 @@ public class PersistentAccountDAO implements AccountDAO {
     public Account getAccount(String accountNo) throws InvalidAccountException {
         Cursor cursor = dbHelper.getAccountByNo(accountNo);
 
+        //check account exist for the given account number
         if(cursor.moveToFirst()){
             String acc_no = cursor.getString(0);
             String bank = cursor.getString(1);
@@ -86,29 +92,37 @@ public class PersistentAccountDAO implements AccountDAO {
 
     @Override
     public void addAccount(Account account)  {
-        Cursor cursor = dbHelper.getAccountByNo(account.getAccountNo());
 
+        //Check duplicate account exist for new account
+        Cursor cursor = dbHelper.getAccountByNo(account.getAccountNo());
         if(cursor.moveToFirst()) {
-            Toast.makeText(context, "Account already exists.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, account.getAccountNo()+" Account already exists.", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        //add new account to the database
         dbHelper.addNewAccount(account.getAccountNo(),account.getBankName(),account.getAccountHolderName(),account.getBalance());
     }
 
     @Override
     public void removeAccount(String accountNo) throws InvalidAccountException {
         Cursor cursor = dbHelper.getAccountByNo(accountNo);
+
+        //Check account number is valid
         if(!cursor.moveToFirst()) {
             String err = "Account " + accountNo + " is invalid.";
             throw new InvalidAccountException(err);
         }
 
+        //delete account from the database
         dbHelper.deleteAccount(accountNo);
     }
 
     @Override
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
         Cursor cursor = dbHelper.getAccountByNo(accountNo);
+
+        //check account number validity
         if(!cursor.moveToFirst()) {
             String err = "Account " + accountNo + " is invalid.";
             throw new InvalidAccountException(err);
@@ -124,10 +138,14 @@ public class PersistentAccountDAO implements AccountDAO {
             finalBalance = currentBalance + amount;
         }
 
+        //check value of transaction exceed the balance
         if(finalBalance<0){
-            String err = "Balance is not Enough!";
-            throw new InvalidAccountException(err);
+            String error = "Balance is not Enough!";
+            Toast.makeText(context, error, Toast.LENGTH_SHORT).show();
+            return;
         }
+
+        //update the database
         dbHelper.updateAccountBalance(amount,accountNo);
     }
 }

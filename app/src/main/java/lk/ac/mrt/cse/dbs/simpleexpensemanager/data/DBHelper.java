@@ -33,6 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Since we don't want this function in this application,I didn't implement it
     }
 
+    //add new account to the database
     public boolean addNewAccount(String acc_no, String bank_name, String holder , double initial_balance){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -50,6 +51,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //delete account from the database
     public boolean deleteAccount(String acc_no){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues  contentValues = new ContentValues();
@@ -62,6 +64,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //add new transaction to the Log
     public boolean addTransactionLog(String acc_no,String type,double amount,String date){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -78,6 +81,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    // get account by account Number
     public Cursor getAccountByNo(String acc_no){
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -86,6 +90,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    //Get all account numbers as a list
     public Cursor getAllAccountNo(){
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -94,6 +99,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    //Get all the account details as a list
     public Cursor getAllAccounts(){
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -102,6 +108,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    //Update the Accounts balance for a given account
     public boolean updateAccountBalance(double amount,String acc_no){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -115,6 +122,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //Get all transaction details as list
     public Cursor getAllTransactions(){
         SQLiteDatabase db  = this.getReadableDatabase();
 

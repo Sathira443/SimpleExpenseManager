@@ -14,6 +14,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
+/**
+ * This is a persistent implementation of TransactionDAO interface. All the
+ * transaction logs are stored in a SQLite database.
+ */
 public class PersistentTransactionDAO implements TransactionDAO {
 
     private final DBHelper dbHelper;
@@ -24,22 +28,23 @@ public class PersistentTransactionDAO implements TransactionDAO {
 
     @Override
     public void logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount) {
-        //check for account existence
+        //Get the account and check the existence
         Cursor result = dbHelper.getAccountByNo(accountNo);
         if(!result.moveToFirst()){
-            System.out.println("Account Number Is Invalid");
             return;
         }
 
-        //check for current amount
-        double CurrentAmount = result.getDouble(3);
-        if(ExpenseType.EXPENSE == expenseType && (CurrentAmount-amount)<0){
-            System.out.println("Current Balance Exceeded");
+        //Get the remaining value in account and Check transaction can be completed without exceeding balance
+        double remainingAmount = result.getDouble(3); //
+        if(ExpenseType.EXPENSE == expenseType && (remainingAmount-amount)<0){
             return;
         }
+
         DateFormat simpleFormat = new SimpleDateFormat("yyyy-MM-dd");
         String simpleDate = simpleFormat.format(date);
-        dbHelper.addTransactionLog(accountNo,expenseType.name(),amount,simpleDate);
+
+        //Add transaction to the log
+        dbHelper.addTransactionLog(accountNo, expenseType.name(), amount, simpleDate);
     }
 
     @Override
@@ -48,12 +53,14 @@ public class PersistentTransactionDAO implements TransactionDAO {
         Transaction transaction;
 
         Cursor cursor = dbHelper.getAllTransactions();
-        //check cursor nullity
+
+        //Check Transaction Log is empty
         if(!cursor.moveToFirst()){
             return transactionsList;
         }
 
         do {
+            //Getting all the Attribute values for one transaction one by one
             Date date = null;
             String stringDate = cursor.getString(1);
             try {
@@ -61,11 +68,12 @@ public class PersistentTransactionDAO implements TransactionDAO {
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-
             ExpenseType expense = ExpenseType.valueOf(cursor.getString(3));
             String acc_no = cursor.getString(2);
             double amount = cursor.getDouble(4);
             transaction = new Transaction(date,acc_no,expense,amount);
+
+            //add transaction to the list
             transactionsList.add(transaction);
         }
         while(cursor.moveToNext());
