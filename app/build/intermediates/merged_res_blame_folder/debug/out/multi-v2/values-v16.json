@@ -4,7 +4,7 @@
             "outputFile": "D:\\GitHub Projects\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\6b9b50c4d8c3b8c03e839aa5266dd695\\transformed\\appcompat-v7-26.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\13b1d2c16aaec09767fc520178d89365\\appcompat-v7-26.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\5f73f6e60b5d3708c89ef864d43025d1\\transformed\\support-compat-26.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\5c3f062e7bec9abdd32171cdc2f6d1e1\\support-compat-26.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -4,44 +4,6 @@
             "outputFile": "D:\\GitHub Projects\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\b695e826180a520aeeb3dae9e64baca0\\transformed\\design-26.1.0\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,266",
-                        "endLines": "4,5",
-                        "endColumns": "12,96",
-                        "endOffsets": "261,358"
-                    },
-                    "to": {
-                        "startLines": "170,234",
-                        "startColumns": "4,4",
-                        "startOffsets": "12878,17428",
-                        "endLines": "172,234",
-                        "endColumns": "12,96",
-                        "endOffsets": "13084,17520"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\bedf59b14e04368020ee99a031271658\\transformed\\support-media-compat-26.1.0\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "291,294,298,302",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "21302,21470,21759,22055",
-                        "endLines": "293,296,300,304",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "21465,21628,21922,22217"
-                    }
-                },
-                {
                     "source": "D:\\GitHub Projects\\SimpleExpenseManager\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "18",
@@ -61,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\6b9b50c4d8c3b8c03e839aa5266dd695\\transformed\\appcompat-v7-26.1.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\13b1d2c16aaec09767fc520178d89365\\appcompat-v7-26.1.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247,259,260,261,264,267,268,271,272",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -80,7 +42,45 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\5f73f6e60b5d3708c89ef864d43025d1\\transformed\\support-compat-26.1.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\888a2f8cd662601acb0cbcbde4a36de0\\design-26.1.0\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,266",
+                        "endLines": "4,5",
+                        "endColumns": "12,96",
+                        "endOffsets": "261,358"
+                    },
+                    "to": {
+                        "startLines": "170,234",
+                        "startColumns": "4,4",
+                        "startOffsets": "12878,17428",
+                        "endLines": "172,234",
+                        "endColumns": "12,96",
+                        "endOffsets": "13084,17520"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\79f3881c65b69ccfdbc28a5ed9c17b66\\support-media-compat-26.1.0\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "291,294,298,302",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "21302,21470,21759,22055",
+                        "endLines": "293,296,300,304",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "21465,21628,21922,22217"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\5c3f062e7bec9abdd32171cdc2f6d1e1\\support-compat-26.1.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

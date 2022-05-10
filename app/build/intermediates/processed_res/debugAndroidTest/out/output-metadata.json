@@ -1,20 +1,18 @@
 {
-  "version": 3,
+  "version": 2,
   "artifactType": {
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
   "applicationId": "lk.ac.mrt.cse.dbs.simpleexpensemanager.test",
-  "variantName": "debugAndroidTest",
+  "variantName": "processDebugAndroidTestResources",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "attributes": [],
       "versionCode": 0,
       "versionName": "",
       "outputFile": "resources-debugAndroidTest.ap_"
     }
-  ],
-  "elementType": "File"
+  ]
 }

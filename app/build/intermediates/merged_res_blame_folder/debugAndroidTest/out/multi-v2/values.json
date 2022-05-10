@@ -4,7 +4,7 @@
             "outputFile": "D:\\GitHub Projects\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\ad7a3ba1ecabb15887da9ed8f181167f\\transformed\\core-1.4.1-alpha06\\res\\values\\values.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\62f00d3782e47cd8a1b714549c5ef64d\\core-1.4.1-alpha06\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",

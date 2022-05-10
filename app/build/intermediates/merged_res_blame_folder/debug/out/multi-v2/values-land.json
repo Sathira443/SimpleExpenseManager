@@ -4,7 +4,7 @@
             "outputFile": "D:\\GitHub Projects\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\6b9b50c4d8c3b8c03e839aa5266dd695\\transformed\\appcompat-v7-26.1.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\13b1d2c16aaec09767fc520178d89365\\appcompat-v7-26.1.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-3\\b695e826180a520aeeb3dae9e64baca0\\transformed\\design-26.1.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\SATHIRA\\.gradle\\caches\\transforms-2\\files-2.1\\888a2f8cd662601acb0cbcbde4a36de0\\design-26.1.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
