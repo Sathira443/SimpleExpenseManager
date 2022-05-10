@@ -96,7 +96,7 @@ public class PersistentAccountDAO implements AccountDAO {
         //Check duplicate account exist for new account
         Cursor cursor = dbHelper.getAccountByNo(account.getAccountNo());
         if(cursor.moveToFirst()) {
-            //Toast.makeText(context, account.getAccountNo()+" Account already exists.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, account.getAccountNo()+" Account already exists.", Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -1,5 +1,5 @@
 /*
- * Covoidpyright 2015boolean Department of Computer Science and Engineering, University of Moratuwa.
+ * Copyright 2015 Department of Computer Science and Engineering, University of Moratuwa.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -44,10 +44,8 @@ public class ApplicationTest{
 
     @Test
     public void testAddAccount() {
-        expenseManager.addAccount("SASASAA", "Yoda Bank", "Anakin Skywalker", 10000.0);
+        expenseManager.addAccount("1234567242", "Yoda Bank", "Anakin Skywalker", 10000.0);
         List<String> Accounts = expenseManager.getAccountNumbersList();
-        assertTrue(Accounts.contains("SASASAA"));
+        assertTrue(Accounts.contains("1234567242"));
     }
-
-
 }

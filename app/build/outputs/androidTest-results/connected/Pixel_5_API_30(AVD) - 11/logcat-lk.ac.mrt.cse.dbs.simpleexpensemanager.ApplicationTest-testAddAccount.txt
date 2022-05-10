@@ -1,8 +1,4 @@
-05-11 02:17:07.119  3402  3425 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
-05-11 02:17:07.164  3402  3425 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-11 02:17:07.164  3402  3425 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-11 02:17:07.164  3402  3425 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-11 02:17:07.164  3402  3425 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-11 02:17:07.165  3402  3425 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-11 02:17:07.165  3402  3425 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-11 02:17:07.189  3402  3425 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-11 02:54:51.406  3989  4011 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-11 02:54:51.419  3989  4011 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-11 02:54:51.419  3989  4011 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-11 02:54:51.465  3989  4011 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
