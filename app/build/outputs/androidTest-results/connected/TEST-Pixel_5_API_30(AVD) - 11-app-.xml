@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest" tests="1" failures="0" errors="0" skipped="0" time="0.559" timestamp="2022-05-10T21:24:51" hostname="localhost">
+<testsuite name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest" tests="1" failures="0" errors="0" skipped="0" time="0.588" timestamp="2022-05-10T22:11:30" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_5_API_30(AVD) - 11" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="testAddAccount" classname="lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest" time="0.016" />
+  <testcase name="testAddAccount" classname="lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest" time="0.027" />
 </testsuite>
