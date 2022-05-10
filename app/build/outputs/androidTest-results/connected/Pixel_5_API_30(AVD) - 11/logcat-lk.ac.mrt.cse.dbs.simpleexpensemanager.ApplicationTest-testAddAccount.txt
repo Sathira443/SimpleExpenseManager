@@ -1,14 +1,4 @@
-05-11 00:45:27.745  3593  3615 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
-05-11 00:45:27.857  3593  3615 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-11 00:45:27.858  3593  3615 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-11 00:45:27.859  3593  3615 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-11 00:45:27.859  3593  3615 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-11 00:45:27.860  3593  3615 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-11 00:45:27.860  3593  3615 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-11 00:45:27.860  1478  2229 I BeaconBle: Client requested scan, settings=BleSettings [scanMode=ZERO_POWER, callbackType=ALL_MATCHES, reportDelayMillis=0, 5 filters, 1 clients, callingClientName=Nearby] [CONTEXT service_id=111 ]
-05-11 00:45:27.864  1478  2229 I BeaconBle: Stopping scan on delegate scanner. BT state: 12 [CONTEXT service_id=111 ]
-05-11 00:45:27.865  1478  2229 D BluetoothAdapter: isLeEnabled(): ON
-05-11 00:45:27.903  1478  2229 I BeaconBle: Resetting - new scanner available: true [CONTEXT service_id=111 ]
-05-11 00:45:27.903  1478  2229 I BeaconBle: ZERO_POWER is disabled. [CONTEXT service_id=111 ]
-05-11 00:45:27.907  1478  2229 I BeaconBle: 'L' hardware scan: scan stopped, no powered clients [CONTEXT service_id=111 ]
-05-11 00:45:28.173  3593  3615 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-11 01:23:31.087  4357  4379 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-11 01:23:31.099  4357  4379 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-11 01:23:31.099  4357  4379 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-11 01:23:31.108  4357  4379 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)

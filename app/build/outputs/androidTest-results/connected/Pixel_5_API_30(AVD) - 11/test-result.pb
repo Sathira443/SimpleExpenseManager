@@ -1,7 +1,7 @@
 
-¢
-d
-ApplicationTest&lk.ac.mrt.cse.dbs.simpleexpensemanagertestAddAccount2Ðóê“ÀÇÂf:Ðóê“ÀÏ ¥"Ú
+£
+e
+ApplicationTest&lk.ac.mrt.cse.dbs.simpleexpensemanagertestAddAccount2»…ë“€Ï‰Š:»…ë“€ñž›"Ú
 
 logcatandroidÄ
 ÁD:\GitHub Projects\SimpleExpenseManager\app\build\outputs\androidTest-results\connected\Pixel_5_API_30(AVD) - 11\logcat-lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest-testAddAccount.txt"œ
