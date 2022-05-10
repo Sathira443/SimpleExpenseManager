@@ -1,0 +1,10 @@
+05-10 23:59:37.451  2574  2649 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-10 23:59:37.454  1538  2352 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-10 23:59:37.557  2574  2649 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-10 23:59:37.557  2574  2649 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-10 23:59:37.577  2257  2274 I oid.documentsu: WaitForGcToComplete blocked RunEmptyCheckpoint on ProfileSaver for 5.693ms
+05-10 23:59:37.605  2574  2649 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
