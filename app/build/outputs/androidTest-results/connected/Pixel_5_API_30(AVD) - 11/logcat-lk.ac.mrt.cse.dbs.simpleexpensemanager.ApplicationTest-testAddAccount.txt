@@ -1,10 +1,14 @@
-05-10 23:59:37.451  2574  2649 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
-05-10 23:59:37.454  1538  2352 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-05-10 23:59:37.557  2574  2649 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-10 23:59:37.557  2574  2649 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "INCOME"
-05-10 23:59:37.558  2574  2649 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
-05-10 23:59:37.577  2257  2274 I oid.documentsu: WaitForGcToComplete blocked RunEmptyCheckpoint on ProfileSaver for 5.693ms
-05-10 23:59:37.605  2574  2649 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-11 00:45:27.745  3593  3615 I TestRunner: started: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
+05-11 00:45:27.857  3593  3615 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-11 00:45:27.858  3593  3615 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-11 00:45:27.859  3593  3615 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-11 00:45:27.859  3593  3615 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-11 00:45:27.860  3593  3615 W SQLiteLog: (28) double-quoted string literal: "INCOME"
+05-11 00:45:27.860  3593  3615 W SQLiteLog: (28) double-quoted string literal: "EXPENSE"
+05-11 00:45:27.860  1478  2229 I BeaconBle: Client requested scan, settings=BleSettings [scanMode=ZERO_POWER, callbackType=ALL_MATCHES, reportDelayMillis=0, 5 filters, 1 clients, callingClientName=Nearby] [CONTEXT service_id=111 ]
+05-11 00:45:27.864  1478  2229 I BeaconBle: Stopping scan on delegate scanner. BT state: 12 [CONTEXT service_id=111 ]
+05-11 00:45:27.865  1478  2229 D BluetoothAdapter: isLeEnabled(): ON
+05-11 00:45:27.903  1478  2229 I BeaconBle: Resetting - new scanner available: true [CONTEXT service_id=111 ]
+05-11 00:45:27.903  1478  2229 I BeaconBle: ZERO_POWER is disabled. [CONTEXT service_id=111 ]
+05-11 00:45:27.907  1478  2229 I BeaconBle: 'L' hardware scan: scan stopped, no powered clients [CONTEXT service_id=111 ]
+05-11 00:45:28.173  3593  3615 I TestRunner: finished: testAddAccount(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)

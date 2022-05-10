@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Department of Computer Science and Engineering, University of Moratuwa.
+ * Covoidpyright 2015boolean Department of Computer Science and Engineering, University of Moratuwa.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -36,19 +36,18 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
 public class ApplicationTest{
     private static ExpenseManager expenseManager;
 
-    //====================
     @Before
-    public void setup(){
+    public void setup() {
         Context context = ApplicationProvider.getApplicationContext();
         expenseManager = new PersistentExpenseManager(context);
     }
 
     @Test
-    public void testAddAccount(){
-        expenseManager.addAccount("123ABC", "BoC", "Ranjani", 10000);
-        List<String> accountNumbers = expenseManager.getAccountNumbersList();
-        assertTrue(accountNumbers.contains("123ABC"));
-
+    public void testAddAccount() {
+        expenseManager.addAccount("1234567A", "Yoda Bank", "Anakin Skywalker", 10000.0);
+        List<String> Accounts = expenseManager.getAccountNumbersList();
+        assertTrue(Accounts.contains("1234567A"));
     }
+
 
 }

@@ -3,24 +3,24 @@
 3    package="lk.ac.mrt.cse.dbs.simpleexpensemanager.test" >
 4
 5    <uses-sdk
-5-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:5:5-74
+5-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:5:5-74
 6        android:minSdkVersion="19"
-6-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:5:15-41
+6-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:5:15-41
 7        android:targetSdkVersion="26" />
-7-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:5:42-71
+7-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:5:42-71
 8
 9    <instrumentation
-9-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:11:5-15:88
+9-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:11:5-15:88
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:11:22-76
+10-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:11:22-76
 11        android:functionalTest="false"
-11-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:14:22-52
+11-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:14:22-52
 12        android:handleProfiling="false"
-12-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:13:22-53
+12-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:13:22-53
 13        android:label="Tests for lk.ac.mrt.cse.dbs.simpleexpensemanager"
-13-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:15:22-86
+13-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:15:22-86
 14        android:targetPackage="lk.ac.mrt.cse.dbs.simpleexpensemanager" />
-14-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:12:22-84
+14-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:12:22-84
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.4.1-alpha06] C:\Users\SATHIRA\.gradle\caches\transforms-3\ad7a3ba1ecabb15887da9ed8f181167f\transformed\core-1.4.1-alpha06\AndroidManifest.xml:24:5-72
@@ -40,10 +40,10 @@
 22    </queries>
 23
 24    <application android:debuggable="true" >
-24-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:7:5-9:19
+24-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:7:5-9:19
 25        <uses-library android:name="android.test.runner" />
-25-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:8:9-60
-25-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13141470806542118056.xml:8:23-57
+25-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:8:9-60
+25-->D:\GitHub Projects\SimpleExpenseManager\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17787587019419509345.xml:8:23-57
 26
 27        <activity
 27-->[androidx.test:core:1.4.1-alpha06] C:\Users\SATHIRA\.gradle\caches\transforms-3\ad7a3ba1ecabb15887da9ed8f181167f\transformed\core-1.4.1-alpha06\AndroidManifest.xml:27:9-34:20
