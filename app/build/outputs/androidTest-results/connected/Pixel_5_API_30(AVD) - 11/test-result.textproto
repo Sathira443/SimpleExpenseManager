@@ -1,4 +1,4 @@
-# 2022-05-10T19:53:32.101Z:
+# 2022-05-10T20:06:54.842Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
@@ -9,12 +9,12 @@ test_result {
     test_package: "lk.ac.mrt.cse.dbs.simpleexpensemanager"
     test_method: "testAddAccount"
     start_time {
-      seconds: 1652212411
-      nanos: 558000000
+      seconds: 1652213214
+      nanos: 249000000
     }
     end_time {
-      seconds: 1652212411
-      nanos: 594000000
+      seconds: 1652213214
+      nanos: 300000000
     }
   }
   test_status: PASSED
