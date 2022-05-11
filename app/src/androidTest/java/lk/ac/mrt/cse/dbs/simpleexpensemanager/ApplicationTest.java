@@ -64,9 +64,24 @@ public class ApplicationTest{
         expenseManager.updateAccountBalance(accountNo, 11, 5, 2022, ExpenseType.EXPENSE, expense);
 
         double newAmount = expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
-        Log.d("new", String.valueOf(newAmount));
-        Log.d("previous", String.valueOf(previousBalance));
+//        Log.d("new", String.valueOf(newAmount));
+//        Log.d("previous", String.valueOf(previousBalance));
         assertTrue(newAmount == previousBalance - (Double.parseDouble(expense)));
 
+    }
+
+    @Test
+    public void testIncomeTransactions() throws InvalidAccountException {
+        String accountNo="190359PTestingIncome";
+        String income="180.00";
+
+        expenseManager.addAccount(accountNo,"Commercial","Sonam",5000);
+
+        double previousBalance = expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
+        expenseManager.updateAccountBalance(accountNo,24, 5, 2022, ExpenseType.INCOME, income) ;
+
+        double currentBalance=expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
+
+        assertTrue(currentBalance== Double.parseDouble(income) + previousBalance);
     }
 }

@@ -145,7 +145,7 @@ public class PersistentAccountDAO implements AccountDAO {
             Toast.makeText(context, error, Toast.LENGTH_SHORT).show();
             return;
         }
-        Log.d("Value", String.valueOf(finalBalance));
+//        Log.d("Value", String.valueOf(finalBalance));
         //update the database
         dbHelper.updateAccountBalance(finalBalance, accountNo);
     }
