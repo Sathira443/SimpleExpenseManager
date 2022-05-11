@@ -19,16 +19,20 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 import static org.junit.Assert.assertTrue;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.test.core.app.ApplicationProvider;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.ParseException;
 import java.util.List;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
@@ -44,8 +48,25 @@ public class ApplicationTest{
 
     @Test
     public void testAddAccount() {
-        expenseManager.addAccount("Sahan123", "Yoda Bank", "Anakin Skywalker", 10000.0);
+        expenseManager.addAccount("Sasara123", "Yoda Bank", "Anakin Skywalker", 10000.0);
         List<String> Accounts = expenseManager.getAccountNumbersList();
-        assertTrue(Accounts.contains("Sahan123"));
+        assertTrue(Accounts.contains("Sasara123"));
+    }
+
+    @Test
+    public void testExpenseTransactions() throws InvalidAccountException {
+        String accountNo = "190059PTesting5";
+        String expense = "55.00";
+
+        expenseManager.addAccount(accountNo, "People's", "Sonam", 7500);
+
+        double previousBalance = expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
+        expenseManager.updateAccountBalance(accountNo, 11, 5, 2022, ExpenseType.EXPENSE, expense);
+
+        double newAmount = expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
+        Log.d("new", String.valueOf(newAmount));
+        Log.d("previous", String.valueOf(previousBalance));
+        assertTrue(newAmount == previousBalance - (Double.parseDouble(expense)));
+
     }
 }

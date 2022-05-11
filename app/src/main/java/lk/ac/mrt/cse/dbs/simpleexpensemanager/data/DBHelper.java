@@ -109,17 +109,13 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //Update the Accounts balance for a given account
-    public boolean updateAccountBalance(double amount,String acc_no){
+    public void updateAccountBalance(double finalBalance,String acc_no){
         SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("account_no",acc_no);
 
-        int update = db.update(ACCOUNTS_TABLE, contentValues, "account_no=?", new String[]{acc_no});
-        if (update == -1){
-            return false;
-        }else {
-            return true;
-        }
+        String queryString = "UPDATE " + ACCOUNTS_TABLE + " SET initial_balance "  + " = " + finalBalance + " WHERE account_no "  + " = \"" + acc_no +"\";";
+        db.execSQL(queryString);
+
+
     }
 
     //Get all transaction details as list

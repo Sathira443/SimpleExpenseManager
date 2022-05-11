@@ -2,6 +2,7 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -144,8 +145,8 @@ public class PersistentAccountDAO implements AccountDAO {
             Toast.makeText(context, error, Toast.LENGTH_SHORT).show();
             return;
         }
-
+        Log.d("Value", String.valueOf(finalBalance));
         //update the database
-        dbHelper.updateAccountBalance(amount,accountNo);
+        dbHelper.updateAccountBalance(finalBalance, accountNo);
     }
 }
