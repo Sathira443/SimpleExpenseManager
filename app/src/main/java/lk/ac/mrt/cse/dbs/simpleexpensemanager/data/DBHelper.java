@@ -19,7 +19,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //creating the Accounts table for the first time
-        String createAccountStatement = "CREATE TABLE IF NOT EXISTS " + ACCOUNTS_TABLE + "(" + "account_no TEXT PRIMARY KEY, " + "bank_name TEXT NOT NULL, " + "owner_name TEXT NOT NULL, "+ "initial_balance REAL NOT NULL " + ");";
+        String createAccountStatement = "CREATE TABLE IF NOT EXISTS " + ACCOUNTS_TABLE + "(" + "account_no TEXT PRIMARY KEY, " + "bank_name TEXT NOT NULL, " + "owner_name TEXT NOT NULL, "+ "balance REAL NOT NULL " + ");";
         db.execSQL(createAccountStatement);
 
         //create Transactions table for the first time
@@ -34,14 +34,14 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //add new account to the database
-    public boolean addNewAccount(String acc_no, String bank_name, String holder , double initial_balance){
+    public boolean addNewAccount(String acc_no, String bank_name, String holder , double balance){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
         cv.put("account_no",acc_no);
         cv.put("bank_name",bank_name);
         cv.put("owner_name",holder);
-        cv.put("initial_balance",initial_balance);
+        cv.put("balance",balance);
 
         long insert = db.insert(ACCOUNTS_TABLE, null, cv);
         if (insert==-1){
@@ -112,10 +112,8 @@ public class DBHelper extends SQLiteOpenHelper {
     public void updateAccountBalance(double finalBalance,String acc_no){
         SQLiteDatabase db = this.getWritableDatabase();
 
-        String queryString = "UPDATE " + ACCOUNTS_TABLE + " SET initial_balance "  + " = " + finalBalance + " WHERE account_no "  + " = \"" + acc_no +"\";";
+        String queryString = "UPDATE " + ACCOUNTS_TABLE + " SET balance "  + " = " + finalBalance + " WHERE account_no "  + " = \"" + acc_no +"\";";
         db.execSQL(queryString);
-
-
     }
 
     //Get all transaction details as list

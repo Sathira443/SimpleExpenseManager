@@ -48,20 +48,20 @@ public class ApplicationTest{
 
     @Test
     public void testAddAccount() {
-        expenseManager.addAccount("Sasara123", "Yoda Bank", "Anakin Skywalker", 10000.0);
+        expenseManager.addAccount("Ronaldo123", "Yoda Bank", "Ganguli", 10000.0);
         List<String> Accounts = expenseManager.getAccountNumbersList();
-        assertTrue(Accounts.contains("Sasara123"));
+        assertTrue(Accounts.contains("Ronaldo123"));
     }
 
     @Test
     public void testExpenseTransactions() throws InvalidAccountException {
         String accountNo = "190059PTesting5";
-        String expense = "55.00";
+        String expense = "75.00";
 
         expenseManager.addAccount(accountNo, "People's", "Sonam", 7500);
 
         double previousBalance = expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
-        expenseManager.updateAccountBalance(accountNo, 11, 5, 2022, ExpenseType.EXPENSE, expense);
+        expenseManager.updateAccountBalance(accountNo, 10, 5, 2022, ExpenseType.EXPENSE, expense);
 
         double newAmount = expenseManager.getAccountsDAO().getAccount(accountNo).getBalance();
 //        Log.d("new", String.valueOf(newAmount));
